@@ -37,8 +37,9 @@ const Single = () => {
     fetchGif();
   }, [type, slug]);
 
-  const shareGif = () => {avigator.clipboard.write
-    nText(window.location.href);
+  const shareGif = () => {
+   navigator.clipboard.writeText(window.location.href);
+
     alert("GIF link copied to clipboard!");
   };
 
